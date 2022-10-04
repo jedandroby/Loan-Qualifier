@@ -1,10 +1,23 @@
-# Project Title
+# Loan Qualifier App
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This application is a Loan Qualifier. It helps you use an applicants information, and then filters through a list of lenders and their requirements to match up applicants with lenders.
+
+The information required to use the App will be - Rate sheet with list of lenders and requirements, Credit score for applicant, monthly debt payments for applicant, monthly income for applicant, the total loan amount they are seeking, and the estimated value of the home. 
+
+This app saves the user alot of time by not having to manually filter through a list of lenders to find a sutiable match. Its flexible and can accept varying inputs for multiple applicants.
+
+
 
 ---
 
 ## Technologies
+
+To use this application you will need the following - 
+    Python 3.7
+    installed fire module
+    installed questionary module
+    a CLI to interact with the program
+
 
 Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
 
