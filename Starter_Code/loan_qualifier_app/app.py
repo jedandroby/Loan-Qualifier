@@ -12,6 +12,7 @@ import questionary
 from pathlib import Path
 
 from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import save_csv
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -107,10 +108,13 @@ def save_qualifying_loans(qualifying_loans):
 
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
+    
+    Returns:
+        CSV file called 'Qualifying_loans.csv' inside the data folder
     """
     # @TODO: Complete the usability dialog for saving the CSV Files.
     # YOUR CODE HERE!
-
+    save_csv(qualifying_loans)
 
 def run():
     """The main function for running the script."""
@@ -128,6 +132,8 @@ def run():
 
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
+
+
 '''         save results as a CSV file? Y/N
 - when no qualifying loans exist, tell the user there are no loans and exit program
 what do you want to call the file ? 
