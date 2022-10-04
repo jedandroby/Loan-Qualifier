@@ -35,10 +35,10 @@ def save_csv(qualiyfing_loans):
     """Saves the qualifying loans as a CSV file in data directory
 
     Args:
-        qualifying_loans - A list of banks that can satisfy the loan
+        qualifying_loans - A list of lenders that can satisfy the loan
 
     Returns:
-        writes a CSV file with the list of banks
+        writes a CSV file with the list of lenders
     """
     #creating a header for the CSV file
     header= ["Name of Lender","Max Loan Amount","Max LTV","Max DTI","Min Credit Score","Interest Rate"]
