@@ -1,0 +1,50 @@
+  460  start .bash_profile
+  461  dev
+  462  dev
+  463  export alias dev= "conda activate dev"
+  464  alias dev= conda activate dev
+  465  [200~source ~/.bash_profiadsf
+  466  source ~/.bash_profile
+  467  cd ~
+  468  ls
+  469  ls -a
+  470  declare -x dev="conda activate dev"
+  471  dev
+  472  dev
+  473  export
+  474  cd ~
+  475  export
+  476  ls
+  477  cd challenges
+  478  ls
+  479  cd ..
+  480  conda activate dev
+  481  jupyter lab
+  482  ls
+  483  conda activate dev
+  484  jupyter lab
+  485  ls
+  486  cd Class\ activities/
+  487  ls
+  488  cd UCB-VIRT-FIN-PT-09-2022-U-B/
+  489  ls
+  490  git pull
+  491  ls
+  492  cd ..
+  493  cd ..
+  494  ls
+  495  jupyter lab
+  496  conda activate dev
+  497  jupyter lab
+  498  ls
+  499  cd challenges/
+  500  ls
+  501  cd Loan-Qualifier/
+  502  ls
+  503  git status
+  504  git add .
+  505  git status
+  506  git commit -m 'Finished readme, cleaned up app.py and file.io, also added license and images'
+  507  git push
+  508  git status
+  509  history 50 >terminal_history.txt
