@@ -31,7 +31,7 @@ To install the above libraries go ahead and type this into your desired dev envi
 - Creating a dev environment for python 3.7 called 'dev' - if you do not already have an environment setup 
     - `conda create -n dev python=3.7 anaconda`
     - Once you have created the environment type the following to activate and deactivate.
-![source: bootcamp spot conda dev environment details.](./data/Images/anaconda_dev_env.png)
+![source: bootcamp spot conda dev environment details.](./Starter_Code/loan_qualifier_app/data/Images/anaconda_dev_env.png)
 - fire library
     - `pip install fire` 
 - questionary library
@@ -46,17 +46,17 @@ Make sure you install the fire and questionary modules inside your `dev` env and
 Once you have the environment setup and you've cloned the repo go ahead and navigate to your desired ide and locate the file. I will be using VS code for my examples. 
 
 1. start by navigating to the same directory as the app.py file 
-![showing cli path in right location](./data/Images/locate_right_directory.PNG)
+![showing cli path in right location](./Starter_Code/loan_qualifier_app/data/Images/locate_right_directory.PNG)
 2. Activate your dev environment. 
 
 `conda activate dev`
-![activate dev env](./data/Images/activate_dev.jpg)
+![activate dev env](./Starter_Code/loan_qualifier_app/data/Images/activate_dev.jpg)
 
 3. test out the application with what ever parameters you want! if you have an updated daily_rate_sheet.csv, best update that file first. Otherwise use whats still there and see what loans you qualify for!
-![running the loan qualifier](./data/Images/apptest.jpg)
+![running the loan qualifier](./Starter_Code/loan_qualifier_app/data/Images/apptest.jpg)
 
 4. When finished running potential loans, dont forget to deactivate your dev env to make sure you dont get any problems. ` conda deactivate` 
-![source: bootcamp spot conda dev environment details.](./data/Images/anaconda_dev_env.png)
+![source: bootcamp spot conda dev environment details.](./Starter_Code/loan_qualifier_app/data/Images/anaconda_dev_env.png)
 
 ---
 
