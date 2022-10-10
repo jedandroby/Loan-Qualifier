@@ -7,40 +7,67 @@ The information required to use the App will be - Rate sheet with list of lender
 This app saves the user alot of time by not having to manually filter through a list of lenders to find a sutiable match. Its flexible and can accept varying inputs for multiple applicants.
 
 
-
 ---
 
 ## Technologies
 
-To use this application you will need the following - 
-    Python 3.7
-    installed fire module
-    installed questionary module
-    a CLI to interact with the program
+To use this application you will need the following:
 
+- Python 3.7
+- Latest `fire` library
+- latest `questionary` library
+- [Anaconda]( https://docs.anaconda.com/anaconda/install/)  or mini conda to create a dev environment
+- A CLI tool or IDE(Integrated Developer Environment) to interact with the program
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+For the examples i will be using vs code to run the qualifier within my `dev` environment
+    
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+To install the above libraries go ahead and type this into your desired dev environment:
+
+- Creating a dev environment for python 3.7 called 'dev' - if you do not already have an environment setup 
+    - `conda create -n dev python=3.7 anaconda`
+    - Once you have created the environment type the following to activate and deactivate.
+![source: bootcamp spot conda dev environment details.](./data/Images/anaconda_dev_env.png)
+- fire library
+    - `pip install fire` 
+- questionary library
+    - `pip install questionary` 
+
+Make sure you install the fire and questionary modules inside your `dev` env and have it active when using the app or you will get errors. 
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+Once you have the environment setup and you've cloned the repo go ahead and navigate to your desired ide and locate the file. I will be using VS code for my examples. 
+
+1. start by navigating to the same directory as the app.py file 
+![showing cli path in right location](./data/Images/locate_right_directory.PNG)
+2. Activate your dev environment. 
+
+`conda activate dev`
+![activate dev env](./data/Images/activate_dev.jpg)
+
+3. test out the application with what ever parameters you want! if you have an updated daily_rate_sheet.csv, best update that file first. Otherwise use whats still there and see what loans you qualify for!
+![running the loan qualifier](./data/Images/apptest.jpg)
+
+4. When finished running potential loans, dont forget to deactivate your dev env to make sure you dont get any problems. ` conda deactivate` 
+![source: bootcamp spot conda dev environment details.](./data/Images/anaconda_dev_env.png)
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+[Robin Thorsen](https://www.linkedin.com/in/robin-thorsen-079819120/) was the main developer working on this project. Alot of code was provided by UC Berkeley for this challenge. 
+
+Best reached via email - robinbthorsen@gmail.com
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+Apache 2.0 public License applied, feel free to clone and fork and use and reach out if you have questions. 

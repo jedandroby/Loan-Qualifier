@@ -114,12 +114,26 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for saving the CSV Files.
     # YOUR CODE HERE!
+    # check that there are loans in the qualifying loan list, if there are loans then proceed.
     if len(qualifying_loans) > 0:
+        # ask if user wants to save the file as a csv file or not.
         confirmation=questionary.confirm("Do you want to save the qualifying loan(s) as a CSV file?").ask()
+        #print(confirmation)
         if confirmation == True:
-            save_csv(qualifying_loans)
+            # if user agrees to save the file, ask what they want to call the file.
+            output = questionary.text('What do you want to call this CSV file?(Example - loans.csv)').ask()
+            # check that the user saved the file as a .csv file, if they did not then amend the file to be a .csv
+            if output[-3:] == 'csv' :
+                # save the file in the data directory.
+                output = f"./data/{output}"
+                save_csv(qualifying_loans,output)
+            else:
+                # if user input did not contain .csv save the file as qualifying_loans.csv in the data directory
+                output = './data/Qualifying_loans.csv' 
+                save_csv(qualifying_loans,output)
     else:
-        sys.exit("There were no qualifying loans could not save file.")
+        # if no loans existed tell the user there were no loans to save
+        sys.exit("There were no qualifying loans, could not save file.")
 
 
 def run():

@@ -31,7 +31,7 @@ def load_csv(csvpath):
     return data
 
 
-def save_csv(qualiyfing_loans):
+def save_csv(qualiyfing_loans,output_path):
     """Saves the qualifying loans as a CSV file in data directory
 
     Args:
@@ -44,10 +44,10 @@ def save_csv(qualiyfing_loans):
     header= ["Name of Lender","Max Loan Amount","Max LTV","Max DTI","Min Credit Score","Interest Rate"]
 
     #output path for the file. 
-    output_path= Path("./data/Qualifying_loans.csv")
+    #output_path= Path("./data/Qualifying_loans.csv")
 
     #Telling user that the program is creating a CSV file
-    print("Writing the data to the CSV file...")
+    print("Saving the loans as a CSV file in data directory...")
     
     #creating qualifying loans CSV file
     with open (output_path, 'w', newline="" ) as csvfile :
