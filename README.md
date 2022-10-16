@@ -31,7 +31,11 @@ To install the above libraries go ahead and type this into your desired dev envi
 - Creating a dev environment for python 3.7 called 'dev' - if you do not already have an environment setup 
     - `conda create -n dev python=3.7 anaconda`
     - Once you have created the environment type the following to activate and deactivate.
+    
 ![source: bootcamp spot conda dev environment details.](./Starter_Code/loan_qualifier_app/data/Images/anaconda_dev_env.png)
+
+<p style="text-align:center;"><img src=./Starter_Code/loan_qualifier_app/data/Images/anaconda_dev_env.png width="500" height="200"/></p>
+
 - fire library
     - `pip install fire` 
 - questionary library
